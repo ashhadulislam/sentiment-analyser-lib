@@ -7,29 +7,24 @@ Use below command to use install
 ### Usage
 
 For training the model
-`from sentimentanalyser import train`
+
 Provide the file path where data is available
+```
+from sentimentanalyser import train
 
-```filePath="/path_to_data/twitter_train.csv"
-
+# Path to training data and output
+filePath="/path_to_data/twitter_train.csv"
 outputDir="/path_to_output/outputs"
 
 trainObj=train.Train()
-
-trainObj.train_file_model(filePath,outputDir)```
+trainObj.train_file_model(filePath,outputDir)
 
 For test data
-
-`from sentimentanalyser import test
-
+from sentimentanalyser import test
 testText=""
-
 test_file_name="/Users/amirulislam/Desktop/testing_datasets/twitter_test.csv"
-
 test_reference_file="twitter_train"
-
-outputDir="/Users/amirulislam/Desktop/outputs"
-
+outputDir="/path_to_output/outputs"
 testObj=test.TestData()
 
 testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)`
@@ -46,7 +41,8 @@ outputDir="/Users/amirulislam/Desktop/outputs"
 
 testObj=test.TestData()
 
-testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)`
+testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
+```
 Utilization of package in Django application
 
 Go to project feedprocessor
