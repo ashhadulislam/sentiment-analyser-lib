@@ -1,32 +1,26 @@
 # sentiment-analyser-lib
 
+### Installation
+Use below command to use install 
+`pip install sentimentanalyser`
 
-To run the package from commandline
+### Usage
 
-pip install sentimentanalyser
+For training the model
+`from sentimentanalyser import train`
+Provide the file path where data is available
 
-from sentimentanalyser import train
-do mention your own paths to the datasets instead of the paths mentioned below
+`filePath="/path_to_data/twitter_train.csv"
 
-filePath="/Users/amirulislam/Desktop/training_datasets/twitter_train.csv"
-
-outputDir="/Users/amirulislam/Desktop/outputs"
-
-trainObj=train.Train()
-
-trainObj.train_file_model(filePath,outputDir)
-
-from sentimentanalyser import train
-
-filePath="/Users/amirulislam/Desktop/training_datasets/bbc_train.csv"
-
-outputDir="/Users/amirulislam/Desktop/outputs"
+outputDir="/path_to_output/outputs"
 
 trainObj=train.Train()
 
-trainObj.train_file_model(filePath,outputDir)
+trainObj.train_file_model(filePath,outputDir)`
 
-from sentimentanalyser import test
+For test data
+
+`from sentimentanalyser import test
 
 testText=""
 
@@ -38,7 +32,7 @@ outputDir="/Users/amirulislam/Desktop/outputs"
 
 testObj=test.TestData()
 
-testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
+testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)`
 
 from sentimentanalyser import test
 
@@ -52,7 +46,7 @@ outputDir="/Users/amirulislam/Desktop/outputs"
 
 testObj=test.TestData()
 
-testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
+testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)`
 Utilization of package in Django application
 
 Go to project feedprocessor
