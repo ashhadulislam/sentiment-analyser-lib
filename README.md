@@ -40,16 +40,13 @@ outputDir="/path_to_output/outputs"
 testObj=test.TestData()
 testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
 ```
-Utilization of package in Django application
+### Using package in Flask and Django application
+This package can be easily integrated and used as a library in your in Django application. This will avoid complexity of managing machine learning workflows with web application. Data sets can be uploaded from UI also.
 
 Go to project feedprocessor
-
 Run: python manage.py runserver
-
 Upload training dataset at
-
-http://localhost:8000/sentiment/models/train/
+`http://localhost:8000/sentiment/models/train/`
 
 Then test with your dataset at
-
-http://localhost:8000/sentiment/models/test/
+`http://localhost:8000/sentiment/models/test/`
