@@ -10,13 +10,13 @@ For training the model
 `from sentimentanalyser import train`
 Provide the file path where data is available
 
-`filePath="/path_to_data/twitter_train.csv"
+```filePath="/path_to_data/twitter_train.csv"
 
 outputDir="/path_to_output/outputs"
 
 trainObj=train.Train()
 
-trainObj.train_file_model(filePath,outputDir)`
+trainObj.train_file_model(filePath,outputDir)```
 
 For test data
 
