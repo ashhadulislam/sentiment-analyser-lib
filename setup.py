@@ -2,13 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
       name='sentimentanalyser',
-      version='1.7',
-      description='',
+      version='1.11',
+      description='Generic python library to perform sentiment analysis on any dataset, using different models',
+      long_description='A generic package to help developers perform analysis on their datasets, powered by SVM and Naive-Bayes models and to be followed by many more.',
       url='',
-      author='',
-      author_email='',
+      author='Sanjay Pradeep,Jayanth Anantharapu, Aditya Kumar, Ashhadul Islam',
+      author_email='sanjay.sndk@gmail.com, aditya00kumar@gmail.com, ashhadulislam@gmail.com',
       keywords='',
-      license='',
+      license='MIT',
       packages=['sentimentanalyser'],
       install_requires=[
             "et-xmlfile",
