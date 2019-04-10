@@ -1,6 +1,6 @@
 """
 Author: Aditya Kumar
-Email: aditya1@dbs.com
+Email: aditya00kumar@gmail.com
 Description: Contains all text pre-processing functions
 Project: Document_Classification
 Last Modified: 1/8/18 3:10 PM
