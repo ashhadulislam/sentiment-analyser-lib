@@ -12,19 +12,13 @@ Use below command to use install
 ### Usage
 New version Supports the following libraries:
 
-Nearest Neighbors
-
-Linear SVM
-
-RBF SVM 
-
-Decision Tree
-
-Random Forest
-
-Neural Net
-
-Naive Bayes
+1. Nearest Neighbors
+2. Linear SVM
+3. RBF SVM 
+4. Decision Tree
+5. Random Forest
+6. Neural Net
+7. Naive Bayes
 
 For training the model
 
