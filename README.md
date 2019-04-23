@@ -34,7 +34,7 @@ test_reference_file="twitter_train"
 outputDir="/path_to_output/outputs"
 testObj=test.TestData()
 
-testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)`
+testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
 ```
 ```
 from sentimentanalyser import test
