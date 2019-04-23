@@ -15,6 +15,7 @@ from copy import copy,deepcopy
 
 class TestData():
 
+
     def pre_process_data(self,data):
 
         #the pre processing part
@@ -32,6 +33,12 @@ class TestData():
 
         return data
 
+    def get_name_classifiers(self):
+
+        names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Decision Tree",
+             "Random Forest", "Neural Net", "Naive Bayes"]
+
+        return names
 
 
     def test_model(self,test_text, test_file_name, test_reference_file,outputDir):
@@ -133,7 +140,9 @@ class TestData():
         print("Backup looks like this")
         print(dataFramebackUp.head(5))
 
-        for model_name in ['SVM','Naive-Bayes']:
+        model_names=self.get_name_classifiers()
+
+        for model_name in model_names:
             model_file= storage_location+str(model_name)+".pkl"
             print("going for model pkl at",model_file)
             model=joblib.load(model_file)
