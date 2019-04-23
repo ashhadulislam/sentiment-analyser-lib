@@ -10,7 +10,22 @@ Use below command to use install
 `pip install sentimentanalyser`
 
 ### Usage
-(new version coming soon)
+New version Supports the following libraries:
+
+Nearest Neighbors
+
+Linear SVM
+
+RBF SVM 
+
+Decision Tree
+
+Random Forest
+
+Neural Net
+
+Naive Bayes
+
 For training the model
 
 Provide the file path where data is available
