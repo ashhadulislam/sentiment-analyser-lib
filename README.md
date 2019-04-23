@@ -10,7 +10,7 @@ Use below command to use install
 `pip install sentimentanalyser`
 
 ### Usage
-
+(new version coming soon)
 For training the model
 
 Provide the file path where data is available
