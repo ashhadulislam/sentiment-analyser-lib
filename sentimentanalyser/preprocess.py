@@ -16,10 +16,10 @@ from nltk.stem.snowball import SnowballStemmer
 
 
 class PreProcess:
-    '''This class contains all text pre-processing function
+    """This class contains all text pre-processing function
     # Input parameters: Dataframe, Column_name on which function needs to be applied
     # Output parameters: Return dataframe after applying operations
-    '''
+    """
     # todo: Pass functions as a list of arguments to apply in the class
     # todo: make set of words before applying all operations to reduce processing time.
     def __init__(self, data, column_name):
