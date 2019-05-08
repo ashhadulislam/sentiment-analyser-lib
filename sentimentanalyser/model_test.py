@@ -66,6 +66,8 @@ class TestData:
         #another csv file
         #you give csv, you get csv
 
+
+        print(test_file_name)
         if test_file_name is None and test_text != "":
             print("Getting text",len(test_text))
             # text entered on the Text Box
@@ -80,7 +82,7 @@ class TestData:
                 print(dataFrame.head())
 
         # need to consider file
-        elif test_file_name is None and test_text == "":
+        elif test_file_name is not None and test_text == "":
             print("test file name is ", test_file_name)
             test_is_a_file = True
             dataFrame = pd.read_csv(test_file_name)
