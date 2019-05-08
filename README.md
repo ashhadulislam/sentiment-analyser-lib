@@ -47,12 +47,12 @@ testObj=model_test.TestData()
 testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
 ```
 ```
-from sentimentanalyser import test
+from sentimentanalyser import model_test
 testText=""
 test_file_name="/path_to_testdata/bbc_test.csv"
 test_reference_file="bbc_train"
 outputDir="/path_to_output/outputs"
-testObj=test.TestData()
+testObj=model_test.TestData()
 testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
 ```
 ### Using package in Flask and Django application
