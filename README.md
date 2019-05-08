@@ -34,9 +34,8 @@ outputDir="/path_to_output/outputs"
 trainObj=model_train.Train()
 trainObj.train_file_model(filePath,outputDir)
 ```
-
+##### For test data
 ```
-# For test data
 from sentimentanalyser import model_test
 testText=""
 test_file_name="/path_to_testdata/twitter_test.csv"
@@ -46,15 +45,7 @@ testObj=model_test.TestData()
 
 testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
 ```
-```
-from sentimentanalyser import model_test
-testText=""
-test_file_name="/path_to_testdata/bbc_test.csv"
-test_reference_file="bbc_train"
-outputDir="/path_to_output/outputs"
-testObj=model_test.TestData()
-testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
-```
+
 ### Using package in Flask and Django application
 This package can be easily integrated and used as a library in your in Django application. This will avoid complexity of managing machine learning workflows with web application. Data sets can be uploaded from UI also.
 
