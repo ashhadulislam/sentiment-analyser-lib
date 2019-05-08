@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
       name='sentimentanalyser',
-      version='2.2',
+      version='2.3',
       description='Generic python library to perform sentiment analysis on any dataset, using different models',
       long_description='A generic package to help developers perform analysis on their datasets, powered by SVM and '
                        'Naive-Bayes models and to be followed by many more.',
