@@ -1,31 +1,27 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
       name='sentimentanalyser',
-      version='2.4',
+      version='2.5',
       description='Generic python library to perform sentiment analysis on any dataset, using different models',
-      long_description='A generic package to help developers perform analysis on their datasets, powered by SVM and '
-                       'Naive-Bayes models and to be followed by many more.',
+      long_description='A generic package to help developers perform analysis on their dataset, powered by Nearest '
+                       'Neighbors, Linear SVM, RBF SVM, Decision Tree,Random Forest, Neural Net and Naive-Bayes '
+                       'models.',
       url='',
       author='Sanjay Pradeep,Jayanth Anantharapu, Aditya Kumar, Ashhadul Islam',
       author_email='sanjay.sndk@gmail.com, aditya00kumar@gmail.com, ashhadulislam@gmail.com',
-      keywords='',
+      keywords='Classification, Binary Classification, Multi-label Classification, Text data',
       license='MIT',
       packages=['sentimentanalyser'],
       install_requires=[
-            "et-xmlfile",
-            "jdcal",
             "nltk",
             "numpy",
             "openpyxl",
             "pandas",
-            "psycopg2",
-            "python-dateutil",
-            "pytz",
             "scikit-learn",
             "scipy",
             "six",
-            "whitenoise",
+            'tqdm'
       ],
       test_suite='nose.collector',
       tests_require=['nose'],
