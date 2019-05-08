@@ -25,24 +25,24 @@ For training the model
 
 Provide the file path where data is available
 ```
-from sentimentanalyser import train
+from sentimentanalyser import model_train
 
 # Path to training data and output
 filePath="/path_to_data/twitter_train.csv"
 outputDir="/path_to_output/outputs"
 
-trainObj=train.Train()
+trainObj=model_train.Train()
 trainObj.train_file_model(filePath,outputDir)
 ```
 
 ```
 # For test data
-from sentimentanalyser import test
+from sentimentanalyser import model_test
 testText=""
 test_file_name="/path_to_testdata/twitter_test.csv"
 test_reference_file="twitter_train"
 outputDir="/path_to_output/outputs"
-testObj=test.TestData()
+testObj=model_test.TestData()
 
 testedDataFrame=testObj.test_model(testText,test_file_name,test_reference_file,outputDir)
 ```
